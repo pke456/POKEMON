@@ -1,9 +1,10 @@
 #pragma once
-#include"gameNode.h"
 
 class Tech;
-class Unit : public gameNode
+class Unit 
 {
+private:
+	Tech* _skil;
 private:
 	typedef vector<Tech*>					SkillList;
 	typedef vector<Tech*>::iterator			SkillListIter;
@@ -17,10 +18,6 @@ public:
 	Unit(PokeMon info);
 	Unit(PokeMon info, int value);
 	
-	HRESULT init();
-	void release();
-	void update();
-	void render();
 
 	void LevelUP();
 	void RandomSet(int value);
@@ -34,7 +31,7 @@ public:
 
 	void setHP(int value) { _info.HP = value; }
 	void setEXP(int value) { _info.Exp; }
-	void setFB(FrontBack fb) { _info.fb = fb; }
+	void setFB() { _info.img->setFrameX(_info.fb); }
 	void setName(const char* name) { _info.name = name; }
 	void setTurn(bool turn) { _info.turn = turn; }
 	void setRC(RECT rc) { _info.rc = rc; }

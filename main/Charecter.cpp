@@ -12,7 +12,8 @@ HRESULT Charecter::init(void)
 	map.init();
 	unit = new Unit;
 	_unit = new Units;
-	
+	unit = _unit->findPokemon("¸®ÀÚ¸ù");
+	unit->setRC(RectMakeCenter(WINSIZEX / 2, WINSIZEY / 2, 120,120));
 	
 	return S_OK;
 }
@@ -32,6 +33,8 @@ void Charecter::render(HDC hdc)
 {
 	player.render(hdc);
 	map.render(hdc);
+	unit->getInfo().img->frameRender(hdc, unit->getInfo().rc.left, unit->getInfo().rc.top);
+	
 	Rectangle(hdc, rc.left, rc.top, rc.right, rc.bottom);
 }
 

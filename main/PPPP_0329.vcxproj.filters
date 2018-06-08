@@ -79,6 +79,21 @@
     <Filter Include="mainGame\Character\POKEMON\SKILL\물타입">
       <UniqueIdentifier>{7b035131-6920-44c0-a45d-544111bfd29a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="mainGame\Character\POKEMON\SKILL\불타입">
+      <UniqueIdentifier>{6de94faa-cd8e-4a12-8f29-9aaf57224bee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainGame\Character\POKEMON\SKILL\풀타입">
+      <UniqueIdentifier>{1b32cbd8-0ac6-4f48-afb7-76bd3b99760a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainGame\Character\POKEMON\SKILL\전기">
+      <UniqueIdentifier>{35a1b8b0-4820-42e6-a5d7-cdf43ad80375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainGame\Character\POKEMON\SKILL\비행">
+      <UniqueIdentifier>{7937dc4f-6940-4b8f-9b2d-8fbe9ad1483a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainGame\Character\POKEMON\SKILL\땅">
+      <UniqueIdentifier>{12740945-5e90-4d1e-9747-aaa1fba4ff9e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">

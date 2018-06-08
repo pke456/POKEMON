@@ -5,8 +5,6 @@
 
 Unit::Unit()
 {
-	_info.img = new image;
-	_info.genderimg = new image;
 }
 
 Unit::Unit(PokeMon info)
@@ -19,24 +17,6 @@ Unit::Unit(PokeMon info, int value)
 	_info = info;
 	RandomSet(value);
 }
-
-HRESULT Unit::init()
-{
-	return S_OK;
-}
-
-void Unit::release()
-{
-}
-
-void Unit::update()
-{
-}
-
-void Unit::render()
-{
-}
-
 
 Unit::~Unit()
 {

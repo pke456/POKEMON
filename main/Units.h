@@ -1,7 +1,8 @@
 #pragma once
+#include"gameNode.h"
 #include"Unit.h"
 
-class Units
+class Units :public gameNode
 {
 private:
 	typedef map<string, Unit*>				Monsters;
